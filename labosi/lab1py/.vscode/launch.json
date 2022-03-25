@@ -1,0 +1,39 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Heuristic",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--ss",
+                "../autograder/data/lab1/files/ai.txt",
+                "--h",
+                "../autograder/data/lab1/files/ai_fail.txt",
+                "--check-consistent"
+            ]
+        },
+        {
+            "name": "Algo",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--alg",
+                "astar",
+                "--ss",
+                "../autograder/data/lab1/files/3x3_puzzle.txt",
+                "--h",
+                "../autograder/data/lab1/files/3x3_misplaced_heuristic.txt"
+            ]
+        }
+    ]
+}
