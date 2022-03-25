@@ -1,5 +1,5 @@
 from heapq import heappop, heappush
-from node import Node, FCostNode
+from node import Node, FCostNode, GCostNode
 from collections import deque
 
 
@@ -34,7 +34,7 @@ def ucs(start, e_states, ss):
             
             
         for tmpstate in ss[current.name]:
-            state = Node(tmpstate.name, tmpstate.cost, current)
+            state = GCostNode(tmpstate.name, tmpstate.cost, current)
             if(state.name not in closed):
                 id += 1
                 state.gcost = current.gcost + state.cost

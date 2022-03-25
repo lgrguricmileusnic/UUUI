@@ -19,7 +19,7 @@ class Node:
         return hash(self.name)
 
 
-class TCostNode(Node):
+class GCostNode(Node):
     def __init__(self, name, cost, parent):
         super().__init__(name, cost, parent)
         self.gcost = 0
