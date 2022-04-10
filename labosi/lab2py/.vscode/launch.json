@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "resolution",
+            "type": "python",
+            "request": "launch",
+            "args": ["resolution", "../autograder/data/lab2/files/resolution_chicken_alfredo_nomilk.txt"],
+            "program": "solution.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "cooking",
+            "type": "python",
+            "request": "launch",
+            "args": ["cooking", "../autograder/data/lab2/files/cooking_coffee.txt", "../autograder/data/lab2/files/cooking_coffee_input.txt"],
+            "program": "solution.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}
